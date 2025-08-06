@@ -1,0 +1,82 @@
+<!-- Arquitetura & Design - Versão aprimorada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitetura & Design</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="p-5 bg-dark text-white">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="fs-2">Arquitetura & Design</h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+      <div id="acessibilidade">
+        <button class="btn btn-light" aria-label="Acessibilidade" onclick="alternarMenu()">Acessibilidade</button>
+        <div id="menuAcessibilidade" class="d-none">
+          <button class="btn btn-outline-primary m-1" onclick="aumentarFonte()" aria-label="Aumentar fonte">A+</button>
+          <button class="btn btn-outline-primary m-1" onclick="diminuirFonte()" aria-label="Diminuir fonte">A-</button>
+          <button class="btn btn-outline-dark m-1" onclick="alternarContraste()" aria-label="Alternar contraste"><i class="bi bi-shadows"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="inicio" class="text-center mb-5">
+      <h2 class="display-5">Bem-vindo ao universo da estética e função</h2>
+      <p class="lead">Explore projetos que unem beleza, acessibilidade e inovação nos espaços que habitamos.</p>
+      <img src="img/arquitetura.jpg" class="img-fluid rounded-4 my-3" alt="Prédio moderno com fachada envidraçada" loading="lazy">
+    </section>
+
+    <section id="galeria">
+      <h2 class="text-center mb-4">Galeria de Referência</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="img/interior-design.jpg" class="img-fluid rounded" alt="Sala de estar com design minimalista e iluminação natural" loading="lazy">
+        </div>
+        <div class="col-md-6">
+          <img src="img/espaco-publico.jpg" class="img-fluid rounded" alt="Praça pública com paisagismo moderno e acessível" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="my-5">
+      <h2 class="text-center mb-4">Fale conosco</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" aria-label="Campo nome">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu email" aria-label="Campo email">
+        </div>
+        <div class="col-12">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" aria-label="Campo mensagem"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary rounded-pill px-4">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 bg-light mt-5">
+    <p>Projeto fictício desenvolvido por Rebeca para fins educacionais.</p>
+    <p>Arquitetura que acolhe, design que inspira.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
