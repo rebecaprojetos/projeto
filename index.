@@ -1,12 +1,12 @@
+`html
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arquitetura & Design</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,7 +21,7 @@
       </ul>
       <div id="acessibilidade">
         <button class="btn btn-light" aria-label="Acessibilidade" onclick="alternarMenu()">Acessibilidade</button>
-        <div id="menuAcessibilidade" class="d-none">
+        <div id="menuAcessibilidade" class="d-none mt-2">
           <button class="btn btn-outline-primary m-1" onclick="aumentarFonte()" aria-label="Aumentar fonte">A+</button>
           <button class="btn btn-outline-primary m-1" onclick="diminuirFonte()" aria-label="Diminuir fonte">A-</button>
           <button class="btn btn-outline-dark m-1" onclick="alternarContraste()" aria-label="Alternar contraste"><i class="bi bi-shadows"></i></button>
@@ -79,3 +79,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+`
